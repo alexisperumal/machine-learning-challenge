@@ -28,7 +28,7 @@ In addition to logistic regression, several other classifier models were attempt
 
 Individual models were further tuned in individual notebook files.
 
-The best overall result was random forest with 91.1% accuracy on the test set using 13 featues. Feature tuning was looked at using both feature importances resulting from the GridSearch analysis and also Recursive Feature Elimination. With RFE, the top 13 features were selected. (Natural breakpoints existed at 7 features and 13, with dimishing returns beyond 13.)
+The best overall result was Random Forest with 91.1% accuracy on the test set using 13 featues. Feature tuning was looked at using both feature importances resulting from the GridSearch analysis and also Recursive Feature Elimination. With RFE, the top 13 features were selected. (Natural breakpoints existed at 7 features and 13, with dimishing returns beyond 13.)
 
 Overall, Random Forest wroked well for this dataset test set despite the 1.0 training data score possibly suggesting some amount of over fitting.
 
