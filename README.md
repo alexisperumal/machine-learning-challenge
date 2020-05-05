@@ -12,7 +12,11 @@ UCSD Data Science Bootcamp - ML Project
 
 • Model_4_random_forest.ipynb - Optimal model of 4 tried, random forest, with tuned parameters. https://github.com/alexisperumal/machine-learning-challenge/blob/master/model_4_random_forest.ipynb
 
+• Model_4_random_forest-OHE.ipynb - Variant of Model 4 with one hot encoding type label encoding of the y categorical dependent variable. https://github.com/alexisperumal/machine-learning-challenge/blob/master/model_4_random_forest-OHE.ipynb
+
 • alexis-random-forest.sav - model file of the tuned random forest. https://github.com/alexisperumal/machine-learning-challenge/blob/master/alexis-random-forest.sav
+
+• alexis-random-forest-OHE.sav - model file of the OHE variant of random forest. https://github.com/alexisperumal/machine-learning-challenge/blob/master/alexis-random-forest-OHE.sav
 
 ### Model Building and Analysis
 3 categorical outcomes (Candidate, False Positive, or Confirmed) led to the usage of classifier models, starting with the basic Logistical Regression, implemented in model_1.ipynb.
@@ -28,9 +32,13 @@ In addition to logistic regression, several other classifier models were attempt
 
 Individual models were further tuned in individual notebook files.
 
-The best overall result was Random Forest with 91.1% accuracy on the test set using 13 featues. Feature tuning was looked at using both feature importances resulting from the GridSearch analysis and also Recursive Feature Elimination. With RFE, the top 13 features were selected. (Natural breakpoints existed at 7 features and 13, with dimishing returns beyond 13.)
+The best overall result was Random Forest with 91.1% accuracy on the test set using 13 featues. Feature tuning was looked at using both feature importances resulting from the GridSearch analysis and also Recursive Feature Elimination. With RFE, the top 13 features were selected. (Natural breakpoints existed at 7 features and 13, with dimishing returns beyond 13.) The .sav file was saved with verification of the idential results when the model was loaded from the .sav file.
 
 Overall, Random Forest wroked well for this dataset test set despite the 1.0 training data score possibly suggesting some amount of over fitting.
+
+Lastly, there was a question on if encoding of the y categorical variable, one hot encoding style, would impact the model result or performance. This was implemented in a variant notebook. The outcomes were identical although the processing time was a bit slower - however, we don't know if the slowdown was caused by a different state of the computer when the variant was run.
+
+
 
 
 
